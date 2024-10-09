@@ -37,25 +37,13 @@ This Python project is an interactive vocabulary trainer designed to help studen
 ### Example:
 
 ```bash
-number = 1
-```
-
-```text
+Choose Vocab List: 1
 Abhor
 0 / 20
-```
-
-```bash
 continue: 
-```
-
-```text
 Abhor
 hate
 1 / 20
-```
-
-```bash
 known or not: yes
 ```
 
