@@ -1,60 +1,58 @@
+!(preview)[https://github.com/hamza-69/sat-vocab.git/main/blob/untitled.gif]
+
 # SAT Vocabulary Trainer
 
-This Python project is an interactive vocabulary trainer designed to help students prepare for the SAT by mastering vocabulary words across different levels of difficulty. The program presents words at random, asks the user for the definition, and tracks progress by removing known words and repeating unfamiliar ones.
+### Overview
+The **SAT Vocabulary Trainer** is an interactive Python program designed to help users improve their vocabulary in preparation for the SAT exam. It uses a repetition-based learning system to reinforce knowledge and track progress across multiple levels of difficulty.
 
-## Features
+### Key Features
+- **Vocabulary & Suffix Levels**: Offers 50 levels of SAT vocabulary words and 14 levels of common suffixes.
+- **Randomized Word Selection**: Encourages memory retention through randomized word quizzes.
+- **Customizable Learning**: Users can select specific levels to focus on areas of weakness.
+- **Progress Tracking**: Tracks the number of correct and incorrect answers in each session.
 
-- **Randomized Questions**: Words are selected randomly from a predefined list.
-- **Multiple Difficulty Levels**: Select from multiple levels of SAT vocabulary difficulty.
-- **Repetition for Mastery**: Words you get wrong will appear again until you know them.
-- **Progress Tracking**: The program keeps track of words you've mastered.
+### How It Works
+1. **Choose a Mode**: 
+   - Vocabulary or Suffixes.
+2. **Pick a Level**: 
+   - Select from 50 vocabulary levels or 14 suffix levels.
+3. **Interactive Learning**: 
+   - Random words or suffixes are presented for review. You indicate whether you’re familiar with the word or not.
+4. **Repetition**: 
+   - Words marked as unfamiliar are repeated until they are mastered.
 
-## Getting Started
+### How to Run
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/hamza-69/sat-vocab.git
+   ```
+2. Navigate to the directory:  
+   ```bash
+   cd sat-vocab
+   ```
+3. Install necessary dependencies (if any).
+4. Run the program:  
+   ```bash
+   python3 sat_vocab.py
+   ```
 
-### Prerequisites
-
-- Python 3.x
-
-### Running the Program
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/hamza-69/sat-vocab.git
-    cd sat-vocab
-    ```
-
-2. Run the script:
-
-    ```bash
-    python vocab_trainer.py
-    ```
-
-3. Enter the level you wish to play and start practicing.
-
-4. After being shown a word, you will be asked if you know its meaning. If you answer "yes," the word is removed from the list. If you answer "no," the word will appear again later.
-
-### Example:
-
+### Example Usage
 ```bash
-Choose Vocab List: 1
-Abhor
-0 / 20
+——————Welcome to SAT Vocab!!——————
+Choose type to revise (v for vocabulary, s for suffixes): v
+What level do you want? (50 vocabulary levels and 14 suffix levels): 5
+—————
+Tangible
+0 / 10
 continue: 
-Abhor
-hate
-1 / 20
-known or not: yes
+—————
+Tangible
+can be touched
+1 / 10
+known or not: y
 ```
 
-This process will continue until you have mastered all the words in the selected level.
-
-### Future Features
-
-- Add more levels of vocabulary.
-- Implement a scoring system to track improvement over time.
-- Implement a GUI.
-
-## Contributing
-
-Feel free to fork the repository, submit issues, or create pull requests for any improvements or new features.
+### Future Improvements
+- Expand the vocabulary list to include more levels.
+- Add a graphical interface for better usability.
+- Include progress tracking across sessions.
