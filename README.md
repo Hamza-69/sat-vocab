@@ -1,4 +1,4 @@
-!(preview)[https://github.com/hamza-69/sat-vocab.git/main/blob/untitled.gif]
+!(preview)[https://github.com/hamza-69/sat-vocab.git/blob/main/untitled.gif]
 
 # SAT Vocabulary Trainer
 
