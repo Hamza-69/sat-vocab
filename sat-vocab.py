@@ -17,6 +17,9 @@ def type_choose():
 def dictionary_choose(choice):
     level = int(input("What level do you want? "))
     if choice:
+        if level > 50:
+            print("Please choose a level between 1 and 50!")
+            return ""
         return f'level{level}'
     else:
         return f'level{level+50}'
@@ -54,6 +57,8 @@ def main():
     greeting()
     vocabs = json_load('vocab.json')
     while True:
+        if dictionary_choose(type_choose()) == "":
+            continue
         loop_list(vocabs[dictionary_choose(type_choose())])
 
 if __name__ == "__main__":
