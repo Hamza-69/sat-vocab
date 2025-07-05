@@ -1,0 +1,20 @@
+# Enable CORS
+Header always set Access-Control-Allow-Origin "*"
+
+# Set correct MIME types for JavaScript modules
+<FilesMatch "\.js$">
+    Header set Content-Type "application/javascript"
+</FilesMatch>
+
+# Set correct MIME types for CSS
+<FilesMatch "\.css$">
+    Header set Content-Type "text/css"
+</FilesMatch>
+
+# Handle client-side routing
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L] 
